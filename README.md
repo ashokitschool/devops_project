@@ -1,6 +1,5 @@
-=======================
-DevOps Project Outline
-=======================
+
+#DevOps Project Outline
 
 1) Setting up Terraform to facilitate infrastructure provisioning.
 
@@ -180,9 +179,6 @@ Part-5 : Create First Jenkins Pipeline Job
 1) Create Jenkins Pipeline 
 
 2) Add Build Stage To Pipeline 
-
-
-
 
 ==================================
 Part-6 : SonarQube Integration
