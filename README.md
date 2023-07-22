@@ -1,5 +1,5 @@
 
-#DevOps Project Outline
+# DevOps Project Outline
 
 1) Setting up Terraform to facilitate infrastructure provisioning.
 
@@ -33,9 +33,7 @@
 
 16) Monitoring the Kubernetes cluster using Prometheus.
 
-==================================================
-Part-1 : Prepare Terraform Environment on Windows
-===================================================
+# Part-1 : Prepare Terraform Environment on Windows
 
 As part of this, we should setup
 
@@ -67,17 +65,15 @@ in my system, this path location is C:\terraform_1.3.7
 	$ aws configure list
 
 
-==================================
-Part-2 : Launch DevOps Instances
-==================================
+
+# Part-2 : Launch DevOps Instances
 
 1) Create Key pair in EC2 (name: dpp.pem)
 
 2) Execute terraform script to Create VPC + EC2 instances
 
-=================================
-Part-3 : Setup Ansible Server
-=================================
+
+# Part-3 : Setup Ansible Server
 
 1) Connect to Ansible VM using pem file 
 
@@ -119,9 +115,9 @@ ansible_ssh_private_key_file=/opt/dpp.pem
 
 $ ansible -i hosts all -m ping 
 
-=======================================
-Part-4 : Jenkins Master & Slave Setup 
-=======================================
+
+# Part-4 : Jenkins Master & Slave Setup 
+
 
 1) Connect to jenkins master machine and check jenkins status 
 
@@ -172,17 +168,14 @@ Part-4 : Jenkins Master & Slave Setup
    Availability: `Keep this agent online as much as possible`
    
 
-===========================================
-Part-5 : Create First Jenkins Pipeline Job
-==========================================
+# Part-5 : Create First Jenkins Pipeline Job
+
 
 1) Create Jenkins Pipeline 
 
 2) Add Build Stage To Pipeline 
 
-==================================
-Part-6 : SonarQube Integration
-==================================
+# Part-6 : SonarQube Integration
 
 1) Create Sonar cloud account on https://sonarcloud.io
 
@@ -244,9 +237,7 @@ https://docs.sonarsource.com/sonarqube/9.8/analyzing-source-code/scanners/jenkin
 11) Create Quality Gate in sonar cloud and make it default
 
 
-=========================================
-Part-7 : Jfrog Artifactory Integration
-=========================================
+# Part-7 : Jfrog Artifactory Integration
 
 1) Create Artifactory account
 2) Generate an access token with username (username must be your email id)
