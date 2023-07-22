@@ -1,0 +1,25 @@
+pipeline {
+    agent {
+        node {
+            label 'maven'
+        }
+    }
+    
+    environment{
+        PATH = "/opt/apache-maven-3.9.3/bin:$PATH"
+    }
+
+    stages {
+        stage('Git Clone') {
+            steps {
+                git branch: 'main', url: 'https://github.com/ashokitschool/ashokit_insta_app.git'
+            }
+        }
+        
+         stage('Maven Build') {
+            steps {
+                sh 'mvn clean package'
+            }
+        }
+    }
+}
